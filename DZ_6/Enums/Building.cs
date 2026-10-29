@@ -108,7 +108,7 @@ namespace DZ6_Tum
 
         public void PrintBuildingInfo()
         {
-            Console.WriteLine($"=== Здание №{_id} ===");
+            Console.WriteLine($"    Здание №{_id}    ");
             Console.WriteLine($"Высота: {_height} м");
             Console.WriteLine($"Этажность: {_floors}");
             Console.WriteLine($"Всего квартир: {_apartmentsCount}");

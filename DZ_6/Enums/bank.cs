@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace DZ6_Tum
 {
     public enum AccountType
@@ -23,8 +22,8 @@ namespace DZ6_Tum
         public BankAccount(decimal balance, AccountType accountType)
         {
             _accountNumber = GenerateAccountID();
-            Balance = balance;                   
-            _accountType = accountType;           
+            Balance = balance;
+            _accountType = accountType;
         }
 
         private static int GenerateAccountID()
@@ -66,7 +65,7 @@ namespace DZ6_Tum
         }
         public void Withdraw(decimal amount)
         {
-            if (_balance < amount )
+            if (_balance < amount)
             {
                 throw new ArgumentException("Недостаточно средтсв!");
             }
